@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#кожен сам створює файл pull-requests.txt на  рівні gitignor
+pull-requests.txt
