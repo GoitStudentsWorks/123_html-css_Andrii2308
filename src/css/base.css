@@ -23,15 +23,27 @@ h2 {
   justify-content: center;
   flex-direction: row;
   gap: 8px;
+    cursor: pointer;
   background: #030a06;
   font-size: 16px;
   line-height: 1.6;
   color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.btn:hover,
+.btn:focus {
+  background: #404bbf;
+}
+
+
 
 button, a {
     font-family: inherit;
 }
 
 
+button:hover {
+  background-color: #75D281; /* колір при наведенні */
+    outline: 2px solid #75D281; /* рамка при фокусі */
+      background-color: #7bff00; /* колір при натисканні */
+}
