@@ -1,19 +1,26 @@
 /* Styles for Mobile devices */
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 32px  16px;
+ /* display: flex;         
+  flex-direction: column; 
+  align-items: flex-start;*/
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+  max-width: 768px;
+  display: flex;       /* робимо контейнер флекс */
+  flex-wrap: wrap;     /* дозволяємо блокам переноситись на новий ряд */
+    padding: 64px 32px;
+
   }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding: 64px 64px;
   }
 }
