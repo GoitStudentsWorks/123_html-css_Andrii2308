@@ -11,8 +11,6 @@
 @media only screen and (min-width: 768px) {
   .container {
   max-width: 768px;
-  display: flex;       /* робимо контейнер флекс */
-  flex-wrap: wrap;     /* дозволяємо блокам переноситись на новий ряд */
     padding: 64px 32px;
 
   }
