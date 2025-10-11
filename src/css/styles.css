@@ -8,7 +8,8 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-/*@import url('./animations.css');*/
+/* Icons styles */
+@import url('./icons.css');  
 
 /* Sections style */
 @import url('./header.css');
