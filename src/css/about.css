@@ -1,22 +1,21 @@
 /* -----------MOB----------- */
 
 .about {
-    /* display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center; */
-    background-image: url(../img/about/about-bg-mob-1x.jpg);
+    background-image: url(/img/about/about-bg-mob-1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
     padding-top: 64px;
     padding-bottom: 64px;
-
     @media screen and (min-resolution: 2x),
     (-webkit-min-device-pixel-ratio: 2) {
-        background-image: url(../img/about/about-bg-mob-2x.jpg);
+        background-image: url(/img/about/about-bg-mob-2x.jpg);
     }
+}
+
+.container {
+    padding: 0 16px;
 }
 
 .about-container {
@@ -57,19 +56,18 @@ align-items: center; */
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
         padding: 0 32px;
     }
 
     .about {
-        background-image: url(../img/about/about-bg-tab-1x.jpg);
+        background-image: url(/img/about/about-bg-tab-1x.jpg);
         padding-top: 80px;
         padding-bottom: 80px;
 
 
         @media screen and (min-resolution: 2x),
         (-webkit-min-device-pixel-ratio: 2) {
-            background-image: url(../img/about/about-bg-tab-2x.jpg);
+            background-image: url(/img/about/about-bg-tab-2x.jpg);
         }
     }
 
@@ -93,18 +91,17 @@ align-items: center; */
 
 @media screen and (min-width: 1440px) {
     .container {
-        width: 1440px;
-        padding: 0 336px;
+        padding: 0 64px;
     }
 
     .about {
-        background-image: url(../img/about/about-bg-desctop-1x.jpg);
+        background-image: url(/img/about/about-bg-desctop-1x.jpg);
         padding-top: 112px;
         padding-bottom: 94px;
 
         @media screen and (min-resolution: 2x),
         (-webkit-min-device-pixel-ratio: 2) {
-            background-image: url(../img/about/about-bg-desctop-2x.jpg);
+            background-image: url(/img/about/about-bg-desctop-2x.jpg);
         }
     }
 
