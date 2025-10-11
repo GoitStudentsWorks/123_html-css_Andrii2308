@@ -1,0 +1,32 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-Youtube {
+  width: 0.9697265625em;
+}
+
+.icon-LinkedIn {
+  width: 0.9697265625em;
+}
+
+.icon-Instagram {
+  width: 0.9697265625em;
+}
+
+.icon-ecotote {
+  width: 2.294921875em;
+}
