@@ -1,6 +1,7 @@
 .header {
   background-color: #75D281;
 }
+<<<<<<< HEAD
 
 .header .header-container {
   /* стилі сюди */
@@ -19,6 +20,8 @@
   gap: 40px;
 }
 
+=======
+>>>>>>> bed3a87e952bde3e21fba93edb772ce2ed6da536
 .header-navigation {
    display: flex;
   flex-direction: row;
@@ -32,12 +35,15 @@
     padding-right: 12px;
 }
 
+<<<<<<< HEAD
 .header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
     background: #fff;}
 
+=======
+>>>>>>> bed3a87e952bde3e21fba93edb772ce2ed6da536
 .header-logo {
   fill: #030a06;
 
@@ -97,19 +103,32 @@
   background: #747bff;
 } */
 
+<<<<<<< HEAD
  Tablet
 @media screen and (min-width: 768px) {
+=======
+ /* Tablet */
+@media screen and (min-width: 768px) { 
+>>>>>>> bed3a87e952bde3e21fba93edb772ce2ed6da536
 
 .header-burger-button {
   padding: 12px 12px;
   }
+<<<<<<< HEAD
 
+=======
+} 
+>>>>>>> bed3a87e952bde3e21fba93edb772ce2ed6da536
 
 .header-navigation {
   padding-right: 16px;
   padding-left: 32px;
  }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> bed3a87e952bde3e21fba93edb772ce2ed6da536
 
 
 
@@ -119,6 +138,7 @@
         display: none;
   }
 
+<<<<<<< HEAD
   .header .container {
     flex-direction: row;
     justify-content: space-between;
@@ -150,3 +170,5 @@
   }
  }
  
+=======
+>>>>>>> bed3a87e952bde3e21fba93edb772ce2ed6da536
