@@ -1,0 +1,88 @@
+.feedbacks {
+    padding: 32px 16px;
+}
+.feedbacks-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #030a06;
+    margin-bottom: 32px;
+}
+.stars-qut {
+    margin-bottom: 12px;
+}
+.signature {
+    margin-top: 12px;
+}
+.stars {
+    display: flex;
+    gap: 4px;
+}
+.four {
+    margin-bottom: 24px;
+}
+.fb-text {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #030a06;
+}
+.fb-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.signature {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+}
+.review  {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .fb-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .review {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .stars {
+        margin-bottom: 24px;
+    }
+    .fb-text {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .feedbacks-title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .fb-list{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+    .review {
+        flex-basis: calc((100% - 24px) / 4);
+    }
+    .fbb-text {
+        width: 310px;
+        height: 84px;
+    }
+
+}
