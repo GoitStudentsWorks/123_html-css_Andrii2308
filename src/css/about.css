@@ -1,0 +1,114 @@
+/* -----------MOB----------- */
+
+.about {
+    background-image: url(/img/about/about-bg-mob-1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    @media screen and (min-resolution: 2x),
+    (-webkit-min-device-pixel-ratio: 2) {
+        background-image: url(/img/about/about-bg-mob-2x.jpg);
+    }
+}
+
+/* .container {
+    padding: 0 16px;
+} */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+    margin-bottom: 12px;
+    text-align: center;
+    color: #fff;
+    max-width: 95px;
+    font-weight: 600;
+    font-size: 16px;
+        line-height: 1.5;
+}
+
+.about-subtitle {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    max-width: 288px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+}
+
+.about-desc {
+    text-align: center;
+    color: #fff;
+    max-width: 288px;
+        line-height: 1.6;
+}
+
+/* -----------TAB----------- */
+
+@media screen and (min-width: 768px) {
+    /* .container {
+        padding: 0 32px;
+    } */
+
+    .about {
+        background-image: url(/img/about/about-bg-tab-1x.jpg);
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+
+        @media screen and (min-resolution: 2x),
+        (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url(/img/about/about-bg-tab-2x.jpg);
+        }
+    }
+
+    .about-title {
+        margin-bottom: 16px;
+    }
+
+    .about-subtitle {
+        max-width: 629px;
+        margin-bottom: 24px;
+    }
+
+    .about-desc {
+        max-width: 573px;
+        font-size: 18px;
+            line-height: 1.6;
+    }
+}
+
+/* -----------DESCTOP----------- */
+
+@media screen and (min-width: 1440px) {
+    /* .container {
+        padding: 0 64px;
+    } */
+
+    .about {
+        background-image: url(/img/about/about-bg-desctop-1x.jpg);
+        padding-top: 112px;
+        padding-bottom: 94px;
+
+        @media screen and (min-resolution: 2x),
+        (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url(/img/about/about-bg-desctop-2x.jpg);
+        }
+    }
+ 
+        .about-subtitle {
+          font-size: 56px;  
+        }
+        
+}
