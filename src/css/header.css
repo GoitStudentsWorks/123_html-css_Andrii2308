@@ -1,151 +1,134 @@
+/* Базові стилі для всіх розмірів екрану */
 .header {
   background-color: #75D281;
 }
 
-.header .header-container {
-  /* стилі сюди */
+.container.header-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header-address {
-  margin-left: auto;
+.header-contacts-wrapper {
+  display: none; /* Приховуємо .header-contacts-wrapper на мобільних і планшетних версіях */
 }
+
 .header-menu-list {
   display: none;
-  gap: 20px;
-  margin-bottom: 12px;
 }
+
 .header-address-navigation {
   display: none;
-  gap: 40px;
+ 
 }
 
-.header-navigation {
-   display: flex;
+.header-nav-wrapper {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  justify-content: space-between;
-   background: #75D281;
-  padding-left: 20px;
-  padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 12px;
 }
-
-.header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    background: #fff;}
 
 .header-logo {
   fill: #030a06;
-
-  /* display: inline-flex;
-  align-items: center;
-  justify-content: center; */
 }
+
 .header-burger-button {
-    display: block;
+  display: block;
   background: none;
   border: none;
   padding: 8px 8px;
   margin: 0;
   width: 48px;
   height: 48px;
-
 }
 
-
-  .icon-burger {
+.icon-burger {
   width: 100%;
   height: 100%;
 }
 
 
-/* .nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-} */
-/* .nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
-} */
-/* .nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-} */
-/* Зробити щоб кнопки підсвічвалися знизу
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
-}
-.nav-link.active::after {
-  background: #747bff;
-} */
 
- Tablet
+
+/* Планшет */
 @media screen and (min-width: 768px) {
-
-.header-burger-button {
-  padding: 12px 12px;
+  .header-burger-button {
+    padding: 12px 12px;
   }
 
-.header-navigation {
+  .container.header-container {
   padding-right: 16px;
-  padding-left: 32px;
- }
+}
 }
 
-
-
- @media screen and (min-width: 1440px) { 
-
-.header-burger-button {
-        display: none;
+/* Десктоп */
+@media screen and (min-width: 1440px) {
+  .header-burger-button {
+    display: none;
   }
 
-  .header .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-  }
   
-  .header-navigation {
-    flex-direction: row;
-    align-items: center;
-    width: auto;
+
+  .header-nav-wrapper {
+    
+    padding: 20px; /* шлянути Скидаємо padding для десктопу */
   }
 
- .header-address-navigation {
-    flex-direction: row;
+  .header-contacts-wrapper {
+    display: block; /* Показуємо .header-contacts-wrapper на десктопі */
+  }
+
+  .header-address {
+    margin-left: auto; /* Відновлюємо margin для десктопу */
+  }
+
+  .header-address-navigation {
+    
     gap: 40px;
     align-items: center;
     padding: 0;
+    display: flex; /* Показуємо навігацію контактів */
   }
-  
-  .header-address-links {
+
+  /* .header-address-links {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-    color: #2e2f42; /* Додаємо темний колір */
-    font-weight: 400; /* Якщо потрібно, можна зробити 500 */
+    color: #2e2f42;
+    font-weight: 400;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  } */
+
+  .header-menu-list {
+    display: flex;
+    margin-bottom: 0;
+    gap: 40px;
   }
- }
- 
+  .header-logo {
+  width: 106px;
+  height: 45px;
+}
+  .container.header-container {
+  height: 72px;
+  padding-right: 64px;
+}
+.header-menu-links {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+color: #030a06;
+}
+.header-address-links {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+color: #030a06;
+}
+
+
+  
+}

@@ -1,53 +1,39 @@
 <header class="header">
-   <div class="header-container">
-         <nav class="header-navigation">
-            <svg class="header-logo" width="84" height="36"> 
-             <use href="/img/svg-icon/symbol-defs.svg#icon-ecotote" ></use>
-            </svg>
-            
+  <div class="container header-container">
+    
+    <div class="header-logo-wrapper">
+      <svg class="header-logo" width="84" height="36"> 
+        <use href="/img/svg-icon/symbol-defs.svg#icon-ecotote"></use>
+      </svg>
+    </div>
 
-              
+    <nav class="header-nav-wrapper">
+      <button class="header-burger-button btn" aria-label="menu">
+        <svg class="icon-burger" width="22" height="16">
+          <use href="/img/svg-icon/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
 
-          <button class="header-burger-button btn" aria-label="menu">
-            <svg class="icon-burger" width="22" height="16">
-              <use href="/img/svg-icon/symbol-defs.svg#icon-menu" ></use>
-            </svg>
-          </button>
+      <ul class="header-menu-list">
+        <li><a class="header-menu-links current" href="./index.html">Про нас</a></li>
+        <li><a class="header-menu-links" href="">Переваги</a></li>
+        <li><a class="header-menu-links" href="">Асортимент</a></li>
+        <li><a class="header-menu-links" href="">Галерея</a></li>
+        <li><a class="header-menu-links" href="">Відгуки</a></li>
+        <li><a class="header-menu-links" href="">Контакти</a></li>
+      </ul>
+    </nav>
 
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-links current" href="./index.html">Про нас</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-links" href="">Переваги</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-links" href="">Асортимент</a>
-               <a class="header-menu-links current" href="./index.html">Галерея</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-links" href="">Відгуки</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-links" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
+    <div class="header-contacts-wrapper">
+      <address class="header-address">
+        <ul class="header-address-navigation">
+          <li><a class="header-address-links" 
+            href="tel:+38 (099) 909 11 22">+38 (099) 909 11 22</a></li>
+          <li><a class="header-address-links" href="hello@ecotote.com">hello@ecotote.com</a></li>
+          
+        </ul>
+      </address>
+    </div>
 
-        <!-- Контакти -->
-        <address class="header-address">
-          <ul class="header-address-navigation">
-            <li class="header-adress-item">
-              <a class="header-address-links" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="header-adress-item">
-              <a class="header-address-links" href="tel:+1100011111322111"
-                >+11 (000) 11-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
   </div>
 </header>
