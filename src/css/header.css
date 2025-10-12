@@ -1,6 +1,6 @@
 /* Базові стилі для всіх розмірів екрану */
 .header {
-  background-color: #75D281;
+  background-color: #75d281;
 }
 
 .container.header-container {
@@ -22,12 +22,10 @@
 
 .header-address-navigation {
   display: none;
- 
 }
 
 .header-nav-wrapper {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -50,9 +48,6 @@
   height: 100%;
 }
 
-
-
-
 /* Планшет */
 @media screen and (min-width: 768px) {
   .header-burger-button {
@@ -60,28 +55,25 @@
   }
 
   .container.header-container {
-  padding-right: 16px;
-}
-}
-
-/* Десктоп */
-@media screen and (min-width: 1440px) {
+    padding-right: 16px;
+  }
+}@media screen and (min-width: 1440px) {
   .header-burger-button {
     display: none;
   }
- .header {
+  main {
+    margin-top: 72px;
+  }
+
   .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-}
- }
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
 
   .header-nav-wrapper {
-    
   }
 
   .header-contacts-wrapper {
@@ -93,92 +85,143 @@
   }
 
   .header-address-navigation {
-    
     gap: 40px;
     align-items: center;
     padding: 0;
     display: flex; /* Показуємо навігацію контактів */
   }
 
-
   .header-menu-list {
     display: flex;
     margin-bottom: 0;
     gap: 40px;
+    list-style: none; /* Додаємо для безпеки */
   }
+
   .header-logo {
-  width: 106px;
-  height: 45px;
-}
-  .container.header-container {
-  height: 72px;
-  padding-right: 64px;
-}
-.header-menu-links {
-  font-weight: 400;
-font-size: 16px;
-line-height: 1.6;
-color: #030a06;
-}
-.header-address-links {
-  font-weight: 400;
-font-size: 16px;
-line-height: 1.6;
-color: #030a06;
-}
-.header-address-navigation a:active,
-  .header-menu-list a:active {
-    color: #3AC04C;
+    width: 106px;
+    height: 45px;
   }
-   
-
   
-.header-menu-list a {
-    color: #2e2f42;
-    border-bottom: 1px solid transparent; /* За замовчуванням прозорий бордер */
-    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  .container.header-container {
+    height: 72px;
+    padding-right: 64px;
+    box-sizing: border-box; /* Запобігаємо переповненню */
   }
 
-  .header-menu-list a:hover,
-  .header-menu-list a:focus {
-    border-bottom: 1px solid  #030a06; /* Показуємо пунктирну лінію під посиланням */
+  .header-menu-links {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+  }
+
+  .header-address {
+    font-style: normal; /* Скидаємо курсив для всього address */
+  }
+
+  /* Круті стилі для меню: підкреслення нижче <li> з анімацією */
+  .header-menu-list li {
+    position: relative; /* Для позиціонування ::after */
+    padding-bottom: 0; /* Не додаємо padding, щоб не ламати висоту */
+    transition: none; /* Перехід на ::after */
+  }
+
+  .header-menu-list a {
+    display: block; /* Робимо посилання блочним для кращого позиціонування */
+    color: #030a06;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+    position: relative; /* Для ::after */
+  }
+
+  /* Псевдоелемент для крутої лінії під посиланням */
+  .header-menu-list a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; /* Опускаємо лінію нижче тексту/блоку на 4px */
+    left: 50%;
+    width: 0; /* Початкова ширина 0 для анімації */
+    height: 2px; /* Трохи товстіша для крутості */
+    background: linear-gradient(to right, #3ac04c, #4caf50); /* Градієнт для звичайного стану */
+    transform: translateX(-50%); /* Центруємо */
+    transform-origin: center; /* Анімація від центру */
+    transition: width 0.3s ease-in-out, background 0.3s ease-in-out; /* Додаємо перехід для background */
+    box-shadow: 0 1px 3px rgba(58, 142, 60, 0.3); /* Легка тінь для глибини */
+  }
+
+  .header-menu-list a:hover::after,
+  .header-menu-list a:focus::after {
+    width: 100%; /* Розширюємо лінію на всю ширину посилання */
+    background: linear-gradient(to right, #030a06, #2e2f42); /* Чорний градієнт при ховері */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Чорна тінь для консистентності */
   }
 
   .header-menu-list a:active {
-    color: #388E3C;
-    border-bottom: 1px solid  #3AC04C;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); /* Зберігаємо лінію при натисканні (опціонально) */
+    color: #388e3c;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .header-menu-list a.current::after {
+    width: 100%; /* Постійна лінія для активного */
+    background: linear-gradient(to right, #3ac04c, #4caf50); 
   }
 
   .header-menu-list a.current {
-    color: #4CAF50;
-    border-bottom: 1px solid #3AC04C; 
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);/* Постійна лінія для активного посилання */
+    color: #4caf50;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .header-address-navigation {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+  /* Круті стилі для контактів: аналогічно */
+  .header-address-navigation li {
+    position: relative;
+    padding-bottom: 0; /* Не ламаємо висоту */
   }
 
   .header-address-links {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
     color: #2e2f42;
-    border-bottom: 1px solid transparent; /* За замовчуванням прозорий бордер */
-    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+    position: relative; /* Для ::after */
+    display: block;
   }
 
-  .header-address-links:hover,
-  .header-address-links:focus {
-    
-    border-bottom: 1px solid #030a06; /* Показуємо пунктирну лінію під посиланням */
+  .header-address-links::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; /* Опускаємо нижче */
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #030a06, #2e2f42); /* Градієнт для контактів */
+    transform: translateX(-50%);
+    transform-origin: center;
+    transition: width 0.3s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .header-address-links:hover::after,
+  .header-address-links:focus::after {
+    width: 100%;
   }
 
   .header-address-links:active {
-    color: #388E3C;
-    border-bottom: 1px solid #3AC04C; 
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);/* Зберігаємо лінію при натисканні (опціонально) */
+    color: #388e3c;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
-  
-  
+
+  .header-address-links:active::after {
+    background: linear-gradient(to right, #3ac04c, #4caf50); /* Зміна кольору при кліку */
+    width: 100%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .header-address-navigation a:active {
+    color: #3ac04c;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
