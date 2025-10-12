@@ -200,7 +200,7 @@
     background: linear-gradient(to right, #030a06, #2e2f42); /* Градієнт для контактів */
     transform: translateX(-50%);
     transform-origin: center;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.2s ease-in-out;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
 
