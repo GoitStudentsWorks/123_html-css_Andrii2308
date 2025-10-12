@@ -69,12 +69,19 @@
   .header-burger-button {
     display: none;
   }
-
+ .header {
+  .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+ }
   
 
   .header-nav-wrapper {
     
-    padding: 20px; /* шлянути Скидаємо padding для десктопу */
   }
 
   .header-contacts-wrapper {
@@ -93,15 +100,6 @@
     display: flex; /* Показуємо навігацію контактів */
   }
 
-  /* .header-address-links {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-    color: #2e2f42;
-    font-weight: 400;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  } */
 
   .header-menu-list {
     display: flex;
@@ -128,7 +126,59 @@ font-size: 16px;
 line-height: 1.6;
 color: #030a06;
 }
+.header-address-navigation a:active,
+  .header-menu-list a:active {
+    color: #3AC04C;
+  }
+   
 
+  
+.header-menu-list a {
+    color: #2e2f42;
+    border-bottom: 1px solid transparent; /* За замовчуванням прозорий бордер */
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  }
 
+  .header-menu-list a:hover,
+  .header-menu-list a:focus {
+    border-bottom: 1px solid  #030a06; /* Показуємо пунктирну лінію під посиланням */
+  }
+
+  .header-menu-list a:active {
+    color: #388E3C;
+    border-bottom: 1px solid  #3AC04C;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); /* Зберігаємо лінію при натисканні (опціонально) */
+  }
+
+  .header-menu-list a.current {
+    color: #4CAF50;
+    border-bottom: 1px solid #3AC04C; 
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);/* Постійна лінія для активного посилання */
+  }
+
+  .header-address-navigation {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .header-address-links {
+    color: #2e2f42;
+    border-bottom: 1px solid transparent; /* За замовчуванням прозорий бордер */
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  }
+
+  .header-address-links:hover,
+  .header-address-links:focus {
+    
+    border-bottom: 1px solid #030a06; /* Показуємо пунктирну лінію під посиланням */
+  }
+
+  .header-address-links:active {
+    color: #388E3C;
+    border-bottom: 1px solid #3AC04C; 
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);/* Зберігаємо лінію при натисканні (опціонально) */
+  }
+  
   
 }
