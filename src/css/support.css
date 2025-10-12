@@ -149,14 +149,39 @@
   border-radius: 40px;
 }
 
-
-
 /* for Tablet  */
 
 @media only screen and (min-width: 768px) {
-  .support-title{
+  .support-title {
     width: 468px;
   }
 
-  
+  .support-btn {
+    width: 249px;
+  }
+}
+
+/* for Desktop  */
+
+@media only screen and (min-width: 1440px) {
+  .support .container{
+    display: flex;
+    gap: 24px;
+  }
+  .support-title {
+    width: 644px;
+    font-size: 48px;
+  }
+  .support-input {
+    width: 644px;
+  }
+  .support-textarea {
+    width: 644px;
+  }
+  .support-label {
+    width: 644px;
+  }
+  .support-btn {
+    width: 198px;
+  }
 }
