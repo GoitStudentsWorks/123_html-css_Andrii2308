@@ -1,11 +1,11 @@
-import './js/menu'
+import './js/menu';
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.header-menu-list a');
   const sections = document.querySelectorAll('section[id]');
 
   // Плавне прокручування при кліку
   navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener('click', e => {
       e.preventDefault(); // Запобігаємо стандартному переходу
       const targetId = link.getAttribute('href').substring(1); // Отримуємо id без "#"
       const targetSection = document.getElementById(targetId);
@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5 // Активувати, коли 50% секції видно
+    threshold: 0.5, // Активувати, коли 50% секції видно
   };
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
