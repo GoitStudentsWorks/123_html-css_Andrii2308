@@ -1,0 +1,85 @@
+<section class="support">
+  <div class="container">
+    <div class="support-container">
+      <h2 class="support-title" id="support">
+        Залишились питання? Зв'яжіться з нами!
+      </h2>
+      <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
+      <form class="support-form">
+        <div class="support-field">
+          <label for="user-name" class="support-label">Ім'я</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="support-input"
+              id="user-name"
+              name="user-name"
+              placeholder="Іван"
+              minlength="5"
+              maxlength="64"
+              required
+            />
+          </div>
+        </div>
+        <div class="support-field">
+          <label for="user-email" class="support-label">Електронна пошта</label>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              class="support-input pattern-input"
+              id="user-email"
+              name="user-email"
+              placeholder="hello@ecotote.com"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            />
+            <p class="text-valid">Success!</p>
+            <p class="text-invalid">Error text</p>
+          </div>
+        </div>
+        <div class="support-field">
+          <label for="user-message" class="support-label">Повідомлення</label>
+          <textarea
+            class="support-textarea"
+            id="user-message"
+            name="user-message"
+            placeholder="Введіть своє повідомлення..."
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="support-btn">Надіслати</button>
+      </form>
+    </div>
+
+    <div class="support-img">
+      <picture>
+        <source
+          srcset="
+            /img/support/support-desktop.jpg   1x,
+            /img/support/support-desktop2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="gi
+            /img/support/support-tab.jpg   1x,
+            /img/support/support-tab2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /img/support/support-mob-c.jpg   1x,
+            /img/support/support-mob2x-c.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="support-img"
+          src="/img/support/support-desktop.jpg"
+          alt="A studio space with sketches, fabric samples, scissors, and a half-finished eco tote bag on a work table. Natural lighting from a window, lots of texture and personality. This scene hints at the handmade and artist.jpg"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

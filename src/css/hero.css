@@ -1,0 +1,139 @@
+/* -----------MOB----------- */
+
+.container {
+    padding: 64px 16px;
+}
+.mobile-extra {
+  display: none;
+}
+
+.hero-title {
+    max-width: 288px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: #030a06;
+        text-align: left;
+        margin-bottom: 20px;
+}
+
+.hero-desc {
+    max-width: 288px;
+        line-height: 1.6;
+        color: #030a06;
+        text-align: left;
+        margin-bottom: 24px;
+}
+
+.hero-btn {
+    line-height: 1.6;
+        color: #fff;
+        border: 1px solid #030a06;
+            border-radius: 6px;
+            padding: 12px 24px;
+            min-width: 288px;
+            height: 50px;
+            background-color: #030a06;
+            margin-bottom: 24px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+background-color: #030a06;
+opacity: 0.5;
+border: 1px solid #030a06;
+
+}
+
+.hero-btn:active {
+    background: #113916;
+    opacity: 0.6;
+border: 1px solid #113916;
+}
+
+.hero-btn:disabled {
+    background-color: #030a06;
+        opacity: 0.2;
+        border: 1px solid #030a06;
+}
+
+
+.hero-img {
+    border-radius: 40px;
+    
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-extra {
+    display: inline;
+  }
+}
+
+
+/* -----------TAB----------- */
+@media screen and (min-width: 768px) {
+
+.container {
+    padding: 32px 32px 64px;
+}
+
+.hero-text {
+    display: flex;
+    gap: 24px;
+margin-bottom: 20px;
+}
+
+.hero-title {
+    max-width: 340px;
+    margin-bottom: 0;   
+}
+
+.hero-desc-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-desc {
+    max-width: 340px;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.hero-btn {
+   min-width: 148px;
+        height: 50px;
+        margin-bottom: 0;
+}
+
+}
+
+/* -----------DESCTOP----------- */
+
+@media screen and (min-width: 1440px) {
+
+.container {
+    padding: 32px 64px 64px;
+}
+
+.hero-text {
+    gap: 32px;
+}
+
+.hero-title {
+    font-size: 56px;
+    max-width: 640px;
+}
+
+.hero-desc {
+    max-width: 640px;
+}
+
+.hero-btn {
+    min-width: 148px;
+        height: 50px;
+}
+
+}
