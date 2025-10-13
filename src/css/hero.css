@@ -1,0 +1,132 @@
+/* -----------MOB----------- */
+
+.hero {}
+
+.container {}
+
+.hero-container {
+    /* display: flex;
+    flex-direction: column;
+     */
+}
+
+.hero-text {}
+
+.hero-title {
+    max-width: 288px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: #030a06;
+        text-align: left;
+        margin-bottom: 20px;
+}
+
+.hero-desc-img {}
+
+.hero-desc {
+    max-width: 288px;
+        line-height: 1.6;
+        color: #030a06;
+        text-align: left;
+        margin-bottom: 24px;
+}
+
+.hero-btn {
+    line-height: 1.6;
+        color: #fff;
+        border: 1px solid #030a06;
+            border-radius: 6px;
+            padding: 12px 24px;
+            min-width: 288px;
+            height: 50px;
+            background-color: #030a06;
+            margin-bottom: 24px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+background-color: #030a06;
+opacity: 0.5;
+border: 1px solid #030a06;
+
+}
+
+.hero-btn:active {
+    background: #113916;
+    opacity: 0.6;
+border: 1px solid #113916;
+}
+
+.hero-btn:disabled {
+    background-color: #030a06;
+        opacity: 0.2;
+        border: 1px solid #030a06;
+}
+
+
+.hero-img {
+    border-radius: 40px;
+}
+
+
+/* -----------TAB----------- */
+@media screen and (min-width: 768px) {
+
+.hero {}
+
+.container {}
+
+.hero-container{}
+
+.hero-text {
+    display: flex;
+
+}
+
+.hero-title {}
+
+.hero-desc-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-desc {
+    margin-bottom: 32px;
+}
+
+.hero-btn {}
+
+.hero-img {
+
+}
+
+}
+
+
+/* -----------DESCTOP----------- */
+
+@media screen and (min-width: 1440px) {
+
+.hero {}
+
+.container {}
+
+.hero-container {}
+
+.hero-text {}
+
+.hero-title {}
+
+.hero-desc-img {}
+
+.hero-desc {}
+
+.hero-btn {}
+
+.hero-img {}
+
+}
