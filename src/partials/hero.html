@@ -16,13 +16,14 @@
     </div>
 
     <div class="hero-img">
-      <picture class="hero-img">
+      <picture>
         <source
           srcset="
             /img/hero/hero-img-desctop-1px.jpg 1x,
             /img/hero/hero-img-desctop-2px.jpg 2x
           "
           media="(min-width: 1440px)"
+          type="image/jpeg"
         />
         <source
           srcset="
@@ -30,6 +31,7 @@
             /img/hero/hero-img-tab-2px.jpg 2x
           "
           media="(min-width: 768px) and (max-width: 1439px)"
+          type="image/jpeg"
         />
         <source
           srcset="
@@ -37,11 +39,13 @@
             /img/hero/hero-img-mob-2px.jpg 2x
           "
           media="(max-width: 767px)"
+          type="image/jpeg"
         />
         <img
           class="hero-img"
-          src="/img/hero/hero-img-desctop-1px.jpg"
+          src="/img/hero/hero-img-mob-1px.jpg"
           alt="two shopper bags, the first beige and the second khaki"
+          fetchpriority="high"
         />
       </picture>
     </div>
