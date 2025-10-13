@@ -6,11 +6,17 @@ display: block
     margin-bottom: 32px;
     font-family: "Comfortaa", sans-serif;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 120%;
     letter-spacing: 0.01em;
     text-align: center;
 
+}
+
+@media screen and (min-width: 1440px) {
+    .assortment-header {
+        font-size: 48px;
+    }
 }
 
 .assortment-list {
@@ -34,7 +40,6 @@ display: block
 
 }
 
-
 @media screen and (min-width: 1440px) {
     .assortment-list {
         display: flex;
@@ -46,9 +51,6 @@ display: block
         margin: 0 auto;
     }
 }
-
-
-
 
 .assortment-item {
     flex: 1 1 calc(50% - 32px);
@@ -102,6 +104,7 @@ display: block
     line-height: 160%;
     text-align: center;
     margin-bottom: 8px;
+    font-family: var(--font-family);
 }
 
 .assortment-paragraph-price {
@@ -119,7 +122,7 @@ display: block
     height: 42px;
     background-color: #EBF8ED;
     cursor: pointer;
-
+    border: 1px solid;
 }
 
 .button-buy:hover,
@@ -149,4 +152,3 @@ display: block
         width: 310px;
     }
 }
-
