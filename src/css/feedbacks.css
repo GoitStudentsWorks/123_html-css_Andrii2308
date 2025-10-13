@@ -49,6 +49,7 @@
     margin-bottom: 40px;
 }
 
+
 @media screen and (min-width: 768px) {
     .fb-list {
         flex-direction: row;

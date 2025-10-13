@@ -13,6 +13,7 @@ display: block
 
 }
 
+
 @media screen and (min-width: 1440px) {
     .assortment-header {
         font-size: 48px;
