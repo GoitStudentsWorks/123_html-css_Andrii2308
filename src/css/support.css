@@ -5,7 +5,7 @@
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: #030a06;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .support-subtitle {
@@ -14,7 +14,7 @@
   font-size: 18px;
   line-height: 1.6;
   color: #030a06;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .support-label {
