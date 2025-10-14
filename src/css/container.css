@@ -14,9 +14,7 @@
     padding: 0px 32px;
 
   }
-  [id] {
-  scroll-margin-top: 100px;
-}
+  
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
@@ -24,8 +22,6 @@
     max-width: 1440px;
     padding: 0px 64px;
   }
-  [id] {
-  scroll-margin-top: 100px;
-}
+ 
 }
 
