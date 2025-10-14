@@ -33,6 +33,7 @@
 .hero-btn {
     display: block;
     text-align: center;
+    white-space: nowrap;
     /* display: flex;
     align-items: center;
         justify-content: center; */
@@ -80,6 +81,7 @@ border: 1px solid #113916;
 }
 
 
+
 /* -----------TAB----------- */
 @media screen and (min-width: 768px) {
 
@@ -87,10 +89,18 @@ border: 1px solid #113916;
     padding: 32px 32px 64px;
 }
 
+
+
 .hero-text {
     display: flex;
     gap: 24px;
 margin-bottom: 20px;
+}
+
+.hero-btn {
+    min-width: 148px;
+        height: 50px;
+        
 }
 
 .hero-title {
@@ -110,8 +120,9 @@ margin-bottom: 20px;
 }
 
 .hero-btn {
-   min-width: 148px;
+   max-width: 148px;
         height: 50px;
+        
 }
 
 }
@@ -123,6 +134,7 @@ margin-bottom: 20px;
 .container {
     padding: 32px 64px 64px;
 }
+
 
 .hero-text {
     gap: 32px;
