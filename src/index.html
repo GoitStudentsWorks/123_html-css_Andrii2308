@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
 
-    <!-- Google Fonts -->
+    <!-- Inline Normalize CSS: Вставлено ваш код, усуває блокуючий запит до CDN -->
+    <style>
+      /* modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+      *,::after,::before{box-sizing:border-box}html{font-family:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';line-height:1.15;-webkit-text-size-adjust:100%;tab-size:4}body{margin:0}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:currentcolor}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+    </style>
+
+    <!-- Google Fonts: Async preload, щоб не блокувати рендеринг -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Normalize CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> 
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet"></noscript>
+    <!-- Додайте в styles.css: @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap'); або self-host, як радив раніше -->
+    <style>
+      /* Fallback шрифт відразу, поки Google завантажується */
+      body { font-family: system-ui, sans-serif; }
+    </style>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Основний styles.css: Async preload (якщо не весь критичний – inline above-the-fold) -->
+    <link rel="preload" href="./css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/styles.css"></noscript>
+
+    <!-- Якщо в styles.css є шрифти – додайте font-display: swap в @font-face -->
   </head>
   <body>
     <load src="./partials/header.html" />
-     <load src="./partials/burger.html" />
 
     <main>
-      <!-- Loads the specified .html file -->
       <load src="./partials/hero.html" />
       <load src="./partials/about.html" />
       <load src="./partials/advantages.html" />
@@ -40,7 +43,8 @@
     </main>
 
     <load src="./partials/footer.html" />
+    <load src="./partials/burger.html" />
 
-    <script type="module" src="./main.js"></script>
+    <script type="module" defer src="./main.js"></script> <!-- defer: не блокує парсинг -->
   </body>
 </html>
