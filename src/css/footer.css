@@ -53,11 +53,10 @@ a{
 .tel-list{
     font-family: Fira Sans;
 font-weight: 400;
-font-style: Regular;
 font-size: 16px;
 
 line-height: 160%;
-letter-spacing: 0%;
+
 
 }
 .tit-list{
@@ -88,11 +87,9 @@ letter-spacing: 0%;
 .info{
     font-family: Fira Sans;
 font-weight: 400;
-font-style: Regular;
 font-size: 16px;
 
 line-height: 160%;
-letter-spacing: 0%;
 
 }
 .info-ul{
@@ -106,7 +103,6 @@ letter-spacing: 0%;
 .prava{
     font-family: Fira Sans;
 font-weight: 400;
-font-style: Regular;
 font-size: 14px;
 
 line-height: 1.6;
@@ -147,10 +143,9 @@ margin-top: 24px;
     .tel-list{
         font-family: Fira Sans;
         font-weight: 400;
-        font-style: Regular;
+      
         font-size: 16px;
         line-height: 160%;
-        letter-spacing: 0%;
 
     }
     .info-ul{
