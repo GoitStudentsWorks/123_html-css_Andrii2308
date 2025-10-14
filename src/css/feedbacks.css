@@ -1,4 +1,6 @@
-
+.feedbacks {
+    padding: 32px 0;
+}
 .desktop-break {
     display: none;
 }
@@ -68,6 +70,9 @@
     .review {
         margin-bottom: 32px;
     }
+    .feedbacks {
+    padding: 64px 0;
+}
 
 }
 @media (min-width: 768px) and (max-width: 1439px) {

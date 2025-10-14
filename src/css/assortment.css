@@ -1,5 +1,6 @@
 .section-assortment {
-display: block
+display: block;
+padding: 32px 0;
 }
 
 .assortment-header {
@@ -38,7 +39,9 @@ display: block
         column-gap: 24px;
         row-gap: 48px;
     }
-
+.section-assortment {
+padding: 64px 0;
+}
 }
 
 @media screen and (min-width: 1440px) {

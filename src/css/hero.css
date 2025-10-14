@@ -1,8 +1,9 @@
 /* -----------MOB----------- */
-
-.container {
-    padding: 64px 16px;
+.hero {
+padding: 64px 0px;
 }
+
+
 .mobile-extra {
   display: none;
 }
@@ -85,9 +86,7 @@ border: 1px solid #113916;
 /* -----------TAB----------- */
 @media screen and (min-width: 768px) {
 
-.container {
-    padding: 32px 32px 64px;
-}
+
 
 
 
@@ -131,9 +130,7 @@ margin-bottom: 20px;
 
 @media screen and (min-width: 1440px) {
 
-.container {
-    padding: 32px 64px 64px;
-}
+
 
 
 .hero-text {

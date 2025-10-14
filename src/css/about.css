@@ -13,10 +13,11 @@
         background-image: url(/img/about/about-bg-mob-2x.jpg);
     }
 }
+.about {
+padding: 64px 0px;
 
-/* .container {
-    padding: 0 16px;
-} */
+}
+
 
 .about-container {
     display: flex;
@@ -58,9 +59,7 @@
 /* -----------TAB----------- */
 
 @media screen and (min-width: 768px) {
-    /* .container {
-        padding: 0 32px;
-    } */
+    
 
     .about {
         background-image: url(/img/about/about-bg-tab-1x.jpg);
@@ -73,6 +72,11 @@
             background-image: url(/img/about/about-bg-tab-2x.jpg);
         }
     }
+    .about {
+padding: 80px 0px;
+
+}
+
 
     .about-title {
         margin-bottom: 16px;
@@ -93,9 +97,7 @@
 /* -----------DESCTOP----------- */
 
 @media screen and (min-width: 1440px) {
-    /* .container {
-        padding: 0 64px;
-    } */
+    
 
     .about {
         background-image: url(/img/about/about-bg-desctop-1x.jpg);

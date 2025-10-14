@@ -1,3 +1,7 @@
+.advantages {
+padding: 32px 0px;
+}
+
 .advantages-subtitle {
   font-weight: 600;
   font-size: 16px;
@@ -56,6 +60,10 @@
 
 /* tablet */
 @media screen and (min-width: 768px) {
+  .advantages {
+padding: 64px 0px;
+}
+
   .advantages-subtitle {
     margin-bottom: 16px;
   }
