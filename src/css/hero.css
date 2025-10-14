@@ -7,6 +7,9 @@
   display: none;
 }
 
+.hero-text {
+    margin-bottom: 24px;
+}
 .hero-title {
     max-width: 288px;
     font-family: "Comfortaa", sans-serif;
@@ -28,6 +31,11 @@
 }
 
 .hero-btn {
+    display: block;
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+        justify-content: center; */
     line-height: 1.6;
         color: #fff;
         border: 1px solid #030a06;
@@ -36,7 +44,6 @@
             min-width: 288px;
             height: 50px;
             background-color: #030a06;
-            margin-bottom: 24px;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -105,7 +112,6 @@ margin-bottom: 20px;
 .hero-btn {
    min-width: 148px;
         height: 50px;
-        margin-bottom: 0;
 }
 
 }
