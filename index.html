@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/123_html-css_Andrii2308/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Tute</title>
+
+    <!-- Inline Normalize CSS: Вставлено ваш код, усуває блокуючий запит до CDN -->
+    <style>
+      /* modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+      *,::after,::before{box-sizing:border-box}html{font-family:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';line-height:1.15;-webkit-text-size-adjust:100%;tab-size:4}body{margin:0}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:currentcolor}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+    </style>
+
+    <!-- Google Fonts: Async preload, щоб не блокувати рендеринг -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet"></noscript>
+    <!-- Додайте в styles.css: @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap'); або self-host, як радив раніше -->
+    <style>
+      /* Fallback шрифт відразу, поки Google завантажується */
+      body { font-family: system-ui, sans-serif; }
+    </style>
+
+    <!-- Основний styles.css: Async preload (якщо не весь критичний – inline above-the-fold) -->
+    <noscript></noscript>
+
+    <!-- Якщо в styles.css є шрифти – додайте font-display: swap в @font-face -->
+    <script type="module" crossorigin src="/123_html-css_Andrii2308/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/123_html-css_Andrii2308/assets/index-DkXZh-u9.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <div class="header-logo-wrapper">
+      <a href="." aria-label="На головну сторінку">
+        <svg class="header-logo" width="84" height="36">
+          <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-ecotote"></use>
+        </svg>
+      </a>
+    </div>
+
+    <nav class="header-nav-wrapper">
+      <button class="header-burger-button btn" aria-label="menu">
+        <svg class="icon-burger" width="22" height="16">
+          <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="header-menu-list">
+        <li><a class="header-menu-links" href="#about">Про нас</a></li>
+        <li><a class="header-menu-links" href="#advantage">Переваги</a></li>
+        <li><a class="header-menu-links" href="#assortment">Асортимент</a></li>
+        <li><a class="header-menu-links" href="#gallery">Галерея</a></li>
+        <li><a class="header-menu-links" href="#feedbacks">Відгуки</a></li>
+        <li><a class="header-menu-links" href="#support">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-contacts-wrapper">
+      <address class="header-address">
+        <ul class="header-address-navigation">
+          <li>
+            <a class="header-address-links" href="tel:+380999091122"
+              >+38 (099) 909 11 22</a
+            >
+          </li>
+          <li>
+            <a class="header-address-links" href="mailto:hello@ecotote.com"
+              >hello@ecotote.com</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero">
+  <div class="container">
+    <div class="hero-text">
+      <h2 id="hero" class="hero-title">
+        EcoTote — Стиль, що не шкодить планеті<span class="mobile-extra"
+          >.</span
+        >
+      </h2>
+      <div class="hero-desc-img">
+        <p class="hero-desc">
+          Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та
+          відповідальність разом з EcoTote.
+        </p>
+        <a href="#assortment" class="hero-btn">Купити зараз</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <picture>
+        <source
+          srcset="/123_html-css_Andrii2308/assets/hero-img-desctop-1px-PC85VkBQ.jpg 1x, /123_html-css_Andrii2308/assets/hero-img-desctop-2px-BlZd2RFL.jpg 2x"
+          media="(min-width: 1440px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="/123_html-css_Andrii2308/assets/hero-img-tab-1px-DSWOW-Vz.jpg 1x, /123_html-css_Andrii2308/assets/hero-img-tab-2px-6gh8KXIk.jpg 2x"
+          media="(min-width: 768px) and (max-width: 1439px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="/123_html-css_Andrii2308/assets/hero-img-mob-1px-Cad0rpOm.jpg 1x, /123_html-css_Andrii2308/assets/hero-img-mob-2px-8FRRLaH5.jpg 2x"
+          media="(max-width: 767px)"
+          type="image/jpeg"
+        />
+        <img
+          class="hero-img"
+          src="/123_html-css_Andrii2308/assets/hero-img-mob-1px-Cad0rpOm.jpg"
+          alt="two shopper bags, the first beige and the second khaki"
+          fetchpriority="high"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section id="about" class="about">
+  <div class="container about-container">
+    <h2 class="about-title">Природність</h2>
+    <h3 class="about-subtitle">Турбота про планету</h3>
+    <p class="about-desc">
+      Ми використовуємо органічну бавовну, перероблений пластик, льон та коноплі
+      для наших сумок.
+    </p>
+  </div>
+</section>
+
+      <div class="container">
+  <section id="advantage" class="advantages">
+    <h3 class="advantages-subtitle">Переваги</h3>
+    <h2 class="advantages-title">Чому обрати нас?</h2>
+    <p class="advantages-text">
+      Наші сумки виготовлені з екологічно чистих матеріалів, що забезпечують
+      стійкість і довговічність. Обираючи EcoTote, ви підтримуєте екологічну
+      відповідальність.
+    </p>
+
+    <ul class="advantages-list">
+      <li class="advantages-item">
+        <img
+          srcset="/123_html-css_Andrii2308/assets/img-advan-1-1x-Ctyj6dTo.png 1x, /123_html-css_Andrii2308/assets/img-advan-1-2x-CL-cIJPX.png 2x"
+          src="/123_html-css_Andrii2308/assets/img-advan-1-1x-Ctyj6dTo.png"
+          alt="image of natural materials"
+          width="288"
+          height="198"
+          class="advantages-image"
+        />
+        <div class="advantages-card-overlay">
+          <h3 class="advantages-heading">Стійкість та екологічність</h3>
+          <p class="advantages-description">
+            Виготовлені з органічної бавовни та переробленого пластику.
+          </p>
+        </div>
+      </li>
+
+      <li class="advantages-item">
+        <img
+          srcset="/123_html-css_Andrii2308/assets/img-advan-2-1x-LH1A0_WF.png 1x, /123_html-css_Andrii2308/assets/img-advan-2-2x-D0j83CNv.png 2x"
+          src="/123_html-css_Andrii2308/assets/img-advan-2-1x-LH1A0_WF.png"
+          alt="image of sewing process"
+          width="288"
+          height="198"
+          class="advantages-image"
+        />
+        <div class="advantages-card-overlay">
+          <h3 class="advantages-heading wider">Міцність і довговічність</h3>
+          <p class="advantages-description">
+            Наші сумки мають посилені шви для тривалого використання.
+          </p>
+        </div>
+      </li>
+
+      <li class="advantages-item">
+        <img
+          srcset="/123_html-css_Andrii2308/assets/img-advan-3-1x-DLlLaIUx.png 1x, /123_html-css_Andrii2308/assets/img-advan-3-2x-Bkgtvwqj.png 2x"
+          src="/123_html-css_Andrii2308/assets/img-advan-3-1x-DLlLaIUx.png"
+          alt="a row of eco-tote bags"
+          width="288"
+          height="198"
+          class="advantages-image tab"
+        />
+        <div class="advantages-card-overlay tab">
+          <h3 class="advantages-heading">Стильний та сучасний дизайн</h3>
+          <p class="advantages-description">
+            Мінімалістичні моделі в обмежених серіях для кожного стилю.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+
+      <div class="container">
+<section id="assortment" class="section-assortment">
+    <h2 class="assortment-header">
+        Наші сумки
+    </h2>
+
+    <ul class="assortment-list">
+
+        <li class="assortment-item">
+            <picture>
+                <source media="(min-width: 1440px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-desc-1-min-kHCpWHXY.jpg, /123_html-css_Andrii2308/assets/asortment-desc-1-min@2x-min-pVosyf5m.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-tab-1-min-CcvHubS-.jpg, /123_html-css_Andrii2308/assets/asortment-tab-1-min@2x-min-BLLPIQli.jpg 2x">
+
+                <source media="(max-width: 767px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-mob-1-min-B14Zu8Ke.jpg, /123_html-css_Andrii2308/assets/asortment-mob-1-min@2x-min-QgP8uV-8.jpg 2x">
+
+                <img class="assortment-item-picture" src="/123_html-css_Andrii2308/assets/asortment-tab-1-min-CcvHubS-.jpg"
+                    alt="сумка для щоденного використання" width="288" height="345">
+            </picture>
+
+            <h3 class="assortment-header-item">EcoBag Classic</h3>
+            <p class="assortment-paragraph-item">Елегантна та містка сумка для щоденного використання.</p>
+            <p class="assortment-paragraph-price">$25</p>
+
+            <button class="button-buy" type="button">Купити</button>
+        </li>
+
+
+        <li class="assortment-item">
+            <picture>
+                <source media="(min-width: 1440px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-desc-2-min-Cxc9tLKN.jpg, /123_html-css_Andrii2308/assets/asortment-desc-2-min@2x-min-CXTNce-k.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-tab-2-min-DKk3k7xP.jpg, /123_html-css_Andrii2308/assets/asortment-tab-2-min@2x-min-YbUOI5Xb.jpg 2x">
+
+                <source media="(max-width: 767px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-mob-2-min-0ZaShRdx.jpg, /123_html-css_Andrii2308/assets/asortment-mob-2-min@2x-min-qc6TzPTJ.jpg 2x">
+
+                <img class="assortment-item-picture" src="/123_html-css_Andrii2308/assets/asortment-tab-2-min-DKk3k7xP.jpg"
+                    alt="Сумка для покупок, з посиленими ручками." width="288" height="345">
+            </picture>
+
+            <h3 class="assortment-header-item">EcoTote Shopper</h3>
+            <p class="assortment-paragraph-item">Ідеальна для покупок, з<br> посиленими ручками.</p>
+            <p class="assortment-paragraph-price">$30</p>
+
+            <button class="button-buy" type="button">Купити</button>
+        </li>
+        <li class="assortment-item">
+            <picture>
+                <source media="(min-width: 1440px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-desc-3-min-MrfEw_xU.jpg, /123_html-css_Andrii2308/assets/asortment-desc-3-min@2x-min-n8BuYBu-.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-tab-3-min-BQdo1Dav.jpg, /123_html-css_Andrii2308/assets/asortment-tab-3-min@2x-min-DfmIO6lz.jpg 2x">
+
+                <source media="(max-width: 767px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-mob-3-min-Be6xVOTJ.jpg, /123_html-css_Andrii2308/assets/asortment-mob-3-min@2x-min-BUme3pHp.jpg 2x">
+
+                <img class="assortment-item-picture" src="/123_html-css_Andrii2308/assets/asortment-tab-3-min-BQdo1Dav.jpg"
+                    alt="Рюкзак для міста з відділенням для ноутбука." width="288" height="345">
+            </picture>
+
+            <h3 class="assortment-header-item">EcoBackpack Urban</h3>
+            <p class="assortment-paragraph-item">Зручний рюкзак для міста з відділенням для ноутбука.</p>
+            <p class="assortment-paragraph-price">$45</p>
+
+            <button class="button-buy" type="button">Купити</button>
+        </li>
+
+        <li class="assortment-item">
+            <picture>
+                <source media="(min-width: 1440px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-desc-4-min-DRInpG7D.jpg, /123_html-css_Andrii2308/assets/asortment-desc-4-min@2x-min-fvI2Iiee.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-tab-4-min-Gy9-w03P.jpg, /123_html-css_Andrii2308/assets/asortment-tab-4-min@2x-min-CqjD_YQq.jpg 2x">
+
+                <source media="(max-width: 767px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-mob-4-min-B7sQbk00.jpg, /123_html-css_Andrii2308/assets/asortment-mob-4-min@2x-min-Cag2KkAW.jpg 2x">
+
+                <img class="assortment-item-picture" src="/123_html-css_Andrii2308/assets/asortment-tab-4-min-Gy9-w03P.jpg"
+                    alt="Компактна сумка через плече для найнеобхіднішого." width="288" height="345">
+            </picture>
+
+            <h3 class="assortment-header-item">EcoCrossbody Mini</h3>
+            <p class="assortment-paragraph-item">Компактна сумка через плече для найнеобхіднішого.</p>
+            <p class="assortment-paragraph-price">$20</p>
+
+            <button class="button-buy" type="button">Купити</button>
+        </li>
+
+        <li class="assortment-item">
+            <picture>
+                <source media="(min-width: 1440px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-desc-5-min-BSEXaAbZ.jpg, /123_html-css_Andrii2308/assets/asortment-desc-5-min@2x-min-DmfhEvaL.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-tab-5-min-4-1qKZ0H.jpg, /123_html-css_Andrii2308/assets/asortment-tab-5-min@2x-min--Yyxmt38.jpg 2x">
+
+                <source media="(max-width: 767px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-mob-5-min-B0e6tFfy.jpg, /123_html-css_Andrii2308/assets/asortment-mob-5-min@2x-min-DnsYJi4a.jpg 2x">
+
+                <img class="assortment-item-picture" src="/123_html-css_Andrii2308/assets/asortment-tab-5-min-4-1qKZ0H.jpg"
+                    alt="Стильна та практична сумка для обідів." width="288" height="345">
+            </picture>
+
+            <h3 class="assortment-header-item">EcoLunch Bag</h3>
+            <p class="assortment-paragraph-item">Стильна та практична сумка для обідів.</p>
+            <p class="assortment-paragraph-price">$15</p>
+
+            <button class="button-buy" type="button">Купити</button>
+        </li>
+
+        <li class="assortment-item">
+            <picture>
+                <source media="(min-width: 1440px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-desc-6-min-1fcD3zHj.jpg, /123_html-css_Andrii2308/assets/asortment-desc-6-min@2x-min-BahreR77.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-tab-6-min-BmNydH3L.jpg, /123_html-css_Andrii2308/assets/asortment-tab-6-min@2x-min-Fyo-UPA9.jpg 2x">
+
+                <source media="(max-width: 767px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-mob-6-min-CKhRp0sA.jpg, /123_html-css_Andrii2308/assets/asortment-mob-6-min@2x-min-CIilu0ZC.jpg 2x">
+
+                <img class="assortment-item-picture" src="/123_html-css_Andrii2308/assets/asortment-tab-6-min-BmNydH3L.jpg"
+                    alt="Велика сумка для пляжних речей з водонепроникною підкладкою." width="288" height="345">
+            </picture>
+
+            <h3 class="assortment-header-item">EcoBeach Tote</h3>
+            <p class="assortment-paragraph-item">Велика сумка для пляжних речей з водонепроникною підкладкою.</p>
+            <p class="assortment-paragraph-price">$35</p>
+
+            <button class="button-buy" type="button">Купити</button>
+        </li>
+        <li class="assortment-item">
+            <picture>
+                <source media="(min-width: 1440px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-desc-7-min-TfWavaxo.jpg, /123_html-css_Andrii2308/assets/asortment-desc-7-min@2x-min-CZYzBdPP.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-tab-7-min-CjY9Bvc8.jpg, /123_html-css_Andrii2308/assets/asortment-tab-7-min@2x-min-COTidfCL.jpg 2x">
+
+                <source media="(max-width: 767px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-mob-7-min-HciGcchE.jpg, /123_html-css_Andrii2308/assets/asortment-mob-7-min@2x-min-7f8Rwink.jpg 2x">
+
+                <img class="assortment-item-picture" src="/123_html-css_Andrii2308/assets/asortment-tab-7-min-CjY9Bvc8.jpg"
+                    alt="Містка дорожня сумка з додатковими кишенями." width="288" height="345">
+            </picture>
+
+            <h3 class="assortment-header-item">EcoTravel Duffle</h3>
+            <p class="assortment-paragraph-item">Містка дорожня сумка з додатковими кишенями.</p>
+            <p class="assortment-paragraph-price">$60</p>
+
+            <button class="button-buy" type="button">Купити</button>
+        </li>
+
+        <li class="assortment-item">
+            <picture>
+                <source media="(min-width: 1440px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-desc-8-min-DBWG6p9W.jpg, /123_html-css_Andrii2308/assets/asortment-desc-8-min@2x-min-C-RToLrG.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-tab-8-min-0Ls0XUgR.jpg, /123_html-css_Andrii2308/assets/asortment-tab-8-min@2x-min-w3kcNnGf.jpg 2x">
+
+                <source media="(max-width: 767px)"
+                    srcset="/123_html-css_Andrii2308/assets/asortment-mob-8-min-DQPrIG8t.jpg, /123_html-css_Andrii2308/assets/asortment-mob-8-min@2x-min-DbQBUqLw.jpg 2x">
+
+                <img class="assortment-item-picture" src="/123_html-css_Andrii2308/assets/asortment-tab-8-min-0Ls0XUgR.jpg"
+                    alt="Яскрава та зручна сумка для дітей." width="288" height="345">
+            </picture>
+
+            <h3 class="assortment-header-item">EcoKids Bag</h3>
+            <p class="assortment-paragraph-item">Яскрава та зручна сумка для дітей.</p>
+            <p class="assortment-paragraph-price">$22</p>
+
+            <button class="button-buy" type="button">Купити</button>
+        </li>
+
+    </ul>
+
+</section>
+</div>
+      <div class="container">
+<section id="gallery" class="gallery">
+    <h2 class="gallery-title">Галерея зображень</h2>
+    <p class="gallery-text"><span lang="en">EcoTotes</span> у повсякденному житті</p>
+    <ul class="gallery-list">
+        <li class="gallery-item">
+            <picture>
+                <source media="(min-width: 768px)" 
+                srcset="/123_html-css_Andrii2308/assets/bag1x-BSVDzF57.jpg 1x, /123_html-css_Andrii2308/assets/bag2x-D8dI04al.jpg 2x" />
+                <img class="gallery-img" 
+                src="/123_html-css_Andrii2308/assets/bag1x-BSVDzF57.jpg" 
+                srcset="/123_html-css_Andrii2308/assets/bag1x-BSVDzF57.jpg 1x, /123_html-css_Andrii2308/assets/bag2x-D8dI04al.jpg 2x"
+                alt="Еко-сумка на стулі в кав'ярні">
+            </picture>
+        </li>
+        <li class="gallery-item">
+            <picture>  
+                <source media="(min-width: 768px)" 
+                srcset="/123_html-css_Andrii2308/assets/man1x-zdQPYolp.jpg 1x, /123_html-css_Andrii2308/assets/man1x-zdQPYolp.jpg 2x" />
+                <img class="gallery-img" 
+                src="/123_html-css_Andrii2308/assets/man1xmob-rABc8aW8.jpg"
+                srcset="/123_html-css_Andrii2308/assets/man1xmob-rABc8aW8.jpg 1x, /123_html-css_Andrii2308/assets/man2xmob-Cbj-kaAS.jpg 2x"
+                alt="Чоловік з еко-сумкою в місті">
+            </picture>
+        </li>
+        <li class="gallery-item">
+            <picture>  
+                <source media="(min-width: 768px)" 
+                srcset="/123_html-css_Andrii2308/assets/spacer1x-Ce4BwTFd.jpg 1x, /123_html-css_Andrii2308/assets/spacer2x-BU_c369n.jpg 2x" />
+                <img class="gallery-img" 
+                src="/123_html-css_Andrii2308/assets/spacer1xmob-B_A80if7.jpg"
+                srcset="/123_html-css_Andrii2308/assets/spacer1xmob-B_A80if7.jpg 1x, /123_html-css_Andrii2308/assets/spacer2xmob-CPEkeQVn.jpg 2x"
+                alt="Жінка з еко-сумкою гуляє парком">
+            </picture>
+        </li>
+        <li class="gallery-item">
+            <picture>
+                <source media="(min-width: 768px)" 
+                srcset="/123_html-css_Andrii2308/assets/woman1x-Baw58DTN.jpg 1x, /123_html-css_Andrii2308/assets/woman2x-BBNY0zvT.jpg 2x" />
+                <img class="gallery-img" 
+                src="/123_html-css_Andrii2308/assets/woman1x-Baw58DTN.jpg"
+                srcset="/123_html-css_Andrii2308/assets/woman1x-Baw58DTN.jpg 1x, /123_html-css_Andrii2308/assets/woman2x-BBNY0zvT.jpg 2x"
+                alt="Жінка з повною еко-сумкою овочів на базарі">
+            </picture>
+        </li>
+    </ul>
+</section>
+</div>
+
+
+
+
+
+
+      <div class="container">
+<section id="feedbacks" class="feedbacks">
+  <h2 class="feedbacks-title">
+    Що говорять наші <br class="desktop-break" />
+    клієнти
+  </h2>
+
+  <ul class="fb-list">
+    <li class="review">
+      <ul class="stars-qut">
+        <li class="stars">
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="fbb-text">
+        <h3 class="fb-text">
+          Сумка дуже зручна та стильна, використовую щодня!
+        </h3>
+      </div>
+      <p class="signature">Анна</p>
+    </li>
+
+    <li class="review">
+      <ul class="stars-qut">
+        <li class="stars">
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="fbb-text">
+        <h3 class="fb-text">Відмінна якість матеріалів, приємно здивована.</h3>
+      </div>
+      <p class="signature">Ігор</p>
+    </li>
+
+    <li class="review">
+      <ul class="stars-qut">
+        <li class="stars">
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="fbb-text">
+        <h3 class="fb-text">Сумка повністю відповідає опису, рекомендую!</h3>
+      </div>
+      <p class="signature dop">Олена</p>
+    </li>
+
+    <li class="review">
+      <ul class="stars-qut four">
+        <li class="stars">
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#fat-star"></use>
+          </svg>
+          <svg class="star" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#empty-star"></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="fbb-text">
+        <h3 class="fb-text">Швидка доставка та гарне обслуговування.</h3>
+      </div>
+      <p class="signature">Сергій</p>
+    </li>
+  </ul>
+</section>
+</div>
+
+      
+<section  id="support" class="support">
+  <div class="container">
+    <div class="support-container">
+      <h2 class="support-title">
+        Залишились питання? Зв'яжіться з нами!
+      </h2>
+      <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
+      <form class="support-form">
+        <div class="support-field">
+          <label for="user-name" class="support-label">Ім'я</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="support-input"
+              id="user-name"
+              name="user-name"
+              placeholder="Іван"
+              minlength="5"
+              maxlength="64"
+              required
+            />
+          </div>
+        </div>
+        <div class="support-field">
+          <label for="user-email" class="support-label">Електронна пошта</label>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              class="support-input pattern-input"
+              id="user-email"
+              name="user-email"
+              placeholder="hello@ecotote.com"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            />
+            <p class="text-valid">Success!</p>
+            <p class="text-invalid">Error text</p>
+          </div>
+        </div>
+        <div class="support-field">
+          <label for="user-message" class="support-label">Повідомлення</label>
+          <textarea
+            class="support-textarea"
+            id="user-message"
+            name="user-message"
+            placeholder="Введіть своє повідомлення..."
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="support-btn">Надіслати</button>
+      </form>
+    </div>
+
+    <div class="support-img">
+      <picture>
+        <source
+          srcset="/123_html-css_Andrii2308/assets/support-desktop-HsHwO7IF.jpg 1x, /123_html-css_Andrii2308/assets/support-desktop2x-C8efqoDe.jpg 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/123_html-css_Andrii2308/assets/support-tab-Bztr4Rwy.jpg 1x, /123_html-css_Andrii2308/assets/support-tab2x-CiAwVoLf.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/123_html-css_Andrii2308/assets/support-mob-c-awuZ0wuv.jpg 1x, /123_html-css_Andrii2308/assets/support-mob2x-c-CPPQ55Pe.jpg 2x"
+          media="(min-width: 320px)"
+        />
+        <img
+          class="support-img"
+          src="/123_html-css_Andrii2308/assets/support-desktop-HsHwO7IF.jpg"
+          alt="A studio space with sketches, fabric samples, scissors, and a half-finished eco tote bag on a work table. Natural lighting from a window, lots of texture and personality. This scene hints at the handmade and artist.jpg"
+        />
+      </picture>
+    </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="container">
+  <div class="footer-con">
+    <!-- Додано style для скидання відступів і блочного відображення -->
+    
+    <a href="." aria-label="На головну сторінку EcoTote" style="display: block; margin: 0; padding: 0; border: none; outline: none; text-decoration: none;">
+      <svg class="footer-logo-tablet" width="164" height="70" style="display: block; margin: 0; padding: 0;">
+        <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-ecotote"></use>
+      </svg>
+    </a>
+
+    <!-- Навігація по сайту (внутрішні якірні посилання) -->
+    <ul class="tit-list">
+      <li><a href="#about" class="tel-list">Про нас</a></li>
+      <li><a href="#advantage" class="tel-list">Переваги</a></li>
+      <li><a href="#assortment" class="tel-list">Асортимент</a></li>
+      <li><a href="#gallery" class="tel-list">Галерея</a></li>
+      <li><a href="#feedbacks" class="tel-list">Відгуки</a></li>
+      <li><a href="#support" class="tel-list">Контакти</a></li>
+    </ul>
+
+    <!-- Соціальні іконки для мобільної версії (додано <a> навколо SVG для клікабельності) -->
+    <ul class="foot-icons">
+      <li>
+        <a href="https://www.instagram.com/ecotote" target="_blank" rel="noopener noreferrer" aria-label="Instagram EcoTote">
+          <svg class="footer-logo-item" width="32" height="32">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-Instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/ecotote" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EcoTote">
+          <svg class="footer-logo-item" width="32" height="32">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-LinkedIn"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/ecotote" target="_blank" rel="noopener noreferrer" aria-label="YouTube EcoTote">
+          <svg class="footer-icon-item" width="32" height="32">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-Youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Соціальні іконки для десктопу (аналогічно, з <a>) -->
+    <ul class="foot-icons-desktop">
+      <li>
+        <a href="https://www.instagram.com/ecotote" target="_blank" rel="noopener noreferrer" aria-label="Instagram EcoTote">
+          <svg class="footer-logo-item" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-Instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/ecotote" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EcoTote">
+          <svg class="footer-logo-item" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-LinkedIn"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/ecotote" target="_blank" rel="noopener noreferrer" aria-label="YouTube EcoTote">
+          <svg class="footer-icon-item" width="24" height="24">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-Youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Соціальні іконки для планшету (аналогічно, з <a>) -->
+    <ul class="foot-icons-tablet">
+      <li>
+        <a href="https://www.instagram.com/ecotote" target="_blank" rel="noopener noreferrer" aria-label="Instagram EcoTote">
+          <svg class="footer-logo-item" width="40" height="40">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-Instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/ecotote" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EcoTote">
+          <svg class="footer-logo-item" width="40" height="40">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-LinkedIn"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/ecotote" target="_blank" rel="noopener noreferrer" aria-label="YouTube EcoTote">
+          <svg class="footer-icon-item" width="40" height="40">
+            <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-Youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Контакти: Семантична адреса з правильними схемами (tel:, mailto:) -->
+    <div class="contacts">
+      <address>
+        <ul class="info-ul">
+          <!-- Телефон: Використовуємо tel: для дзвінка, target="_blank" не обов'язковий (відкриває дзвонилку в тій самій вкладці), але додав rel для безпеки. Без _blank, бо це не веб-сторінка. -->
+          <li>
+            <a href="tel:+380999091122" class="info" rel="noopener noreferrer">
+              +38 (099) 909 11 22
+            </a>
+          </li>
+          <!-- Email: mailto: для пошти, target="_blank" для відкриття в новій вкладці (корисно, щоб не втрачати сайт). -->
+          <li>
+            <a href="mailto:hello@ecotote.com" class="info" target="_blank" rel="noopener noreferrer">
+              hello@ecotote.com
+            </a>
+          </li>
+        </ul>
+      </address>
+      <p class="prava">© 2025 EcoTote. Всі права захищені.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- BURGER -->
+<div class="burger-menu" id="burger">
+  <div class="burger-menu-container">
+    <!-- LOGO/CLOSE -->
+    <div class="burger-menu-header">
+      <a href="." aria-label="На головну сторінку">
+        <svg class="burger-logo" width="84" height="36">
+          <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-ecotote"></use>
+        </svg>
+      </a>
+      <!-- BUTTON CLOSE -->
+      <button class="burger-close-button" aria-label="Закрити меню">
+        <svg class="icon-close" width="16" height="16">
+          <use href="/123_html-css_Andrii2308/assets/symbol-defs-Cw6mWbjE.svg#icon-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- NAVIGATION -->
+    <nav class="burger-nav">
+      <ul class="burger-menu-list">
+        <li class="burger-menu-item">
+          <a class="burger-menu-link" href="#about">Про нас</a>
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-link" href="#advantage">Переваги</a>
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-link" href="#assortment">Асортимент</a>
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-link" href="#gallery">Галерея</a>
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-link" href="#feedbacks">Відгуки</a>
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-link" href="#support">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- CONTACTS -->
+    <address class="burger-contacts">
+      <ul class="burger-contacts-list">
+        <li class="burger-contacts-item">
+          <a class="burger-contacts-link" href="tel:+380999091122">
+            +38 (099) 909 11 22
+          </a>
+        </li>
+        <li class="burger-contacts-item">
+          <a class="burger-contacts-link" href="mailto:hello@ecotote.com">
+            hello@ecotote.com
+          </a>
+        </li>
+      </ul>
+    </address>
+  </div>
+</div>
+
+ <!-- defer: не блокує парсинг -->
+  </body>
+</html>
