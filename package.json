@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-novateam6/",
+    "build": "vite build --base=/123_html-css_Andrii2308/",
     "preview": "vite preview"
   },
   "devDependencies": {
